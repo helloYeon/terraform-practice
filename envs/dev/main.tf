@@ -9,10 +9,11 @@ terraform {
 module "main" {
   source = "./../../"
 
-  INSTANCE_PORT = var.INSTANCE_PORT
-  ALB_PORT      = var.ALB_PORT
-  PROJECT_NAME  = var.PROJECT_NAME
-  ENV           = var.ENV
+  PROJECT_NAME      = var.PROJECT_NAME
+  ENV               = var.ENV
+  INSTANCE_PORT     = var.INSTANCE_PORT
+  ALB_PORT          = var.ALB_PORT
+  APP_INSTANCE_TYPE = var.APP_INSTANCE_TYPE
 
 }
 

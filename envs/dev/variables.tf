@@ -26,3 +26,7 @@ variable "INSTANCE_PORT" {
   description = "The port number used for the instance security group (e.g., 8080)"
   type        = number
 }
+variable "APP_INSTANCE_TYPE" {
+  description = "The Instance type of Application"
+  type        = string
+}
